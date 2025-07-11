@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitchnotes - Official Artist Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 50%, #2d2d2d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #ff0066, #00ccff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff0066, #00ccff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+        }
+
+        .real-name {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .streaming-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .streaming-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .streaming-link:hover {
+            background: rgba(0, 0, 0, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .streaming-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent; /* artık background yok */
+}
+
+.streaming-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+        .spotify { background: #1DB954; }
+        .youtube { background: #FF0000; }
+        .deezer { background: #FEAA2D; }
+        .amazon { background: #FFFFFF; }
+        .apple { background: #FA57C1; }
+        .soundcloud { background: #FF5500; }
+
+        .streaming-name {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .contact {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .email-link {
+            color: #00ccff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #ff0066;
+        }
+
+        .footer {
+            margin-top: 30px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .streaming-link {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">P</div>
+        <h1>Pitchnotes</h1>
+        <div class="real-name">Mehmet Kayra Doğan</div>
+        
+        <div class="streaming-links">
+            <a href="https://open.spotify.com/artist/5r7dd44PZiVRf5O5MxDj9v?si=AqfqZ8nXTh-SJegxP9_Msw" class="streaming-link">
+                <div class="streaming-icon spotify"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg" alt="Spotify Logo"></div>
+                <div class="streaming-name">Spotify</div>
+            </a>
+            
+            <a href="https://www.youtube.com/@pitchnotes" class="streaming-link">
+                <div class="streaming-icon youtube"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Logo"></div>
+                <div class="streaming-name">YouTube</div>
+            </a>
+            
+            <a href="https://www.deezer.com/artist/333062081" class="streaming-link">
+                <div class="streaming-icon deezer"><img src="https://images.seeklogo.com/logo-png/50/1/deezer-logo-png_seeklogo-507119.png" alt="Deezer Logo"></div>
+                <div class="streaming-name">Deezer</div>
+            </a>
+            
+            <a href="https://music.amazon.com/artists/B0FFTLPFLJ/pitchnotes" class="streaming-link">
+                <div class="streaming-icon amazon"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Amazon_Music_logo.svg" alt="Amazon Music Logo"></div>
+                <div class="streaming-name">Amazon Music</div>
+            </a>
+        </div>
+        
+        <div class="contact">
+            <h3>Contact</h3>
+            <a href="mailto:m.kayradogan69@gmail.com" class="email-link">m.kayradogan69@gmail.com</a>
+        </div>
+        
+        <div class="footer">
+            © 2025 Pitchnotes. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
